@@ -1,9 +1,6 @@
 <?php
 include '../db.php';
-require '/interview_task/phpmailer/vendor/autoload.php';
-use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
-    use PHPMailer\PHPMailer\SMTP;
+require 'phpmailer/PHPMailerAutoload.php';
 
 if(isset($_POST['action']) && $_POST['action']=='Register'){
 
